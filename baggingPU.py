@@ -24,7 +24,7 @@ from warnings import warn
 from abc import ABCMeta, abstractmethod
 
 from sklearn.base import ClassifierMixin, RegressorMixin
-from sklearn.externals.joblib import Parallel, delayed
+from joblib import Parallel, delayed
 from sklearn.externals.six import with_metaclass
 from sklearn.externals.six.moves import zip
 from sklearn.metrics import r2_score, accuracy_score
