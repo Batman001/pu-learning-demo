@@ -25,8 +25,8 @@ from abc import ABCMeta, abstractmethod
 
 from sklearn.base import ClassifierMixin, RegressorMixin
 from joblib import Parallel, delayed
-from sklearn.externals.six import with_metaclass
-from sklearn.externals.six.moves import zip
+from six import with_metaclass
+from six.moves import zip
 from sklearn.metrics import r2_score, accuracy_score
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 from sklearn.utils import check_random_state, check_X_y, check_array, column_or_1d
